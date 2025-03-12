@@ -1,0 +1,59 @@
+  .search-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .search-song-card {
+    padding: 15px;
+    background-color: #403d3d;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .search-song-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .search-song-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .search-song-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .search-song-cover {
+    height: 160px;        
+    width: 100%;          
+    object-fit: cover;    
+    object-position: center;  
+  }
+
+  .search-song-card:hover {
+    background-color: #1CC759; 
+    color: white; 
+  }
+  
+  .screen-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    border-radius: 8px;
+  }

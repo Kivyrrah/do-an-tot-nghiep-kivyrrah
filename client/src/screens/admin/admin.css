@@ -1,0 +1,127 @@
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  .error-message {
+    color: #dc3545; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .success-message {
+    color: #1CC759; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  form h2 {
+    margin-bottom: 15px;
+  }
+  
+  form input {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #1CC759; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0a692c; 
+  }
+  
+  form button[type="button"] {
+    background-color: #6c757d; 
+  }
+  
+  form button[type="button"]:hover {
+    background-color: #5a6268;
+  }
+  
+  .song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .song-item p {
+    margin: 0;
+    color: #495057; 
+    font-size: 14px;
+  }
+  
+  .song-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #1CC759; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .song-item button:hover {
+    background-color: #0a3e15;
+  }
+  
+  .song-item button:last-child {
+    background-color: #dc3545; 
+  }
+  
+  .song-item button:last-child:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 768px) {
+    .screen-container {
+      padding: 10px;
+    }
+  
+    form input {
+      width: 100%; 
+    }
+  
+    .song-item {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  
+    .song-item button {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
+  

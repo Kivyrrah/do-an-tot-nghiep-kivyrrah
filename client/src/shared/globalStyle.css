@@ -1,0 +1,14 @@
+.screen-container{
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: #1E1E1E;
+    color: white;
+}
+
+button {
+    font-size: 20px;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }

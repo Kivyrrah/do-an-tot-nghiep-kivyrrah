@@ -1,0 +1,36 @@
+  .top-song-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+
+  .top-song-cover {
+    height: 250px;        
+    width: 100%;          
+    object-fit: cover;    
+    object-position: center;  
+  }
+
+  .top-song-card.selected {
+    background-color: #1CC759; 
+    color: white; 
+  }
+
+  .top-song-card {
+    padding: 15px;
+    background-color: #403d3d;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .screen-container {
+    padding-left: 20px;
+  }
+
+  .top-song-card:hover {
+    background-color: #1CC759; 
+    color: white; 
+  }

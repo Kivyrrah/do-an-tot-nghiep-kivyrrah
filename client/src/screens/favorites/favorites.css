@@ -1,0 +1,107 @@
+.favorite-song-list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+  }
+
+  .favorite-song-cover {
+    height: 125px;        
+    width: 100%;          
+    object-fit: cover;    
+    object-position: center;  
+  }
+
+  .favorite-song-card.selected {
+    background-color: #1CC759; 
+    color: white; 
+  }
+
+  .favorite-song-card {
+    padding: 15px;
+    background-color: #403d3d;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .favorite-btn {
+    border-radius: 8px;
+  }
+
+  .delete-playlist-btn {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .delete-song-btn:hover, .delete-playlist-btn:hover {
+    background-color: #FF0000;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .delete-account-btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-dialog {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .confirm-btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .cancel-btn {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .favorite-song-card:hover {
+    background-color: #1CC759; 
+    color: white; 
+  }
+
+  .toggle-playlist-btn svg {
+    color: white;
+  }
+  
+  .delete-account-dialog {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
